@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/summerproj/static/css/main.435d5fe5.chunk.css",
+    "main.js": "/summerproj/static/js/main.f0308c51.chunk.js",
+    "main.js.map": "/summerproj/static/js/main.f0308c51.chunk.js.map",
+    "runtime~main.js": "/summerproj/static/js/runtime~main.95f35cef.js",
+    "runtime~main.js.map": "/summerproj/static/js/runtime~main.95f35cef.js.map",
+    "static/js/2.38fec76d.chunk.js": "/summerproj/static/js/2.38fec76d.chunk.js",
+    "static/js/2.38fec76d.chunk.js.map": "/summerproj/static/js/2.38fec76d.chunk.js.map",
+    "static/js/3.940f5f6f.chunk.js": "/summerproj/static/js/3.940f5f6f.chunk.js",
+    "static/js/3.940f5f6f.chunk.js.map": "/summerproj/static/js/3.940f5f6f.chunk.js.map",
+    "index.html": "/summerproj/index.html",
+    "precache-manifest.7215bec4edeb30b5e2a05ce2e935edf7.js": "/summerproj/precache-manifest.7215bec4edeb30b5e2a05ce2e935edf7.js",
+    "service-worker.js": "/summerproj/service-worker.js",
+    "static/css/main.435d5fe5.chunk.css.map": "/summerproj/static/css/main.435d5fe5.chunk.css.map"
+  }
+}
