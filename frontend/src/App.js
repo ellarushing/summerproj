@@ -4,35 +4,45 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 import ReactGlobe from './ReactGlobe';
+import MapGL from 'react-map-gl';
+import {useState} from 'react';
 
 const App = () => {
+  const MAPBOX_TOKEN = 'pk.eyJ1IjoiZWxsYXJ1c2hpbmciLCJhIjoiY2x3Nnk3dXg5MjA0eDJrcXVsaHM3dHlpeiJ9.ncqhXz4GSoEfFMgQlBw6Ow';
+  const [destinationSearch, setDestinationSearch] = useState('');
+  const [homeSearch, setHomeSearch] = useState('');
+
+  const handleDestinationChange = value => {
+    setDestinationSearch(value);
+  };
+
+  const handleHomeChange = value => {
+    setHomeSearch(value);
+  };
+
+  const handleSearch = () => {
+    console.log('Searching for: ', destinationSearch, homeSearch);
+  };
+
   return (
     <div className="App" style={{ backgroundImage: "linear-gradient(orange, lightblue)" }}>
       <h1 className="welcome">Welcome!</h1>
-      <ReactGlobe />
+      <ReactGlobe/>
       <ReactSearchBox
         className="destinationBox"
         placeholder="Where would you like to go?"
-        value="Doe"
-        callback={(record) => console.log(record)}
+        value={destinationSearch}
+        onChange = {record => handleDestinationChange(record.value)}
       />
       <br/>
       <ReactSearchBox
         className="homeBox"
         placeholder="Where are you from?"
-        value="Doe"
-        callback={(record) => console.log(record)}
+        value={homeSearch}
+        onChange = {record => handleHomeChange(record.value)}
         />
-      <h3><MyButton /></h3>
+      <h3> <button onClick={handleSearch}> Search </button></h3>
     </div>
-  );
-}
-
-function MyButton() {
-  return (
-    <button className="searchButton">
-      Search
-    </button>
   );
 }
 
