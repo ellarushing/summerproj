@@ -11,13 +11,19 @@ const App = () => {
       <h1 className="welcome">Welcome!</h1>
       <ReactGlobe />
       <ReactSearchBox
-        className="searchBox"
+        className="destinationBox"
         placeholder="Where would you like to go?"
         value="Doe"
         callback={(record) => console.log(record)}
       />
+      <br/>
+      <ReactSearchBox
+        className="homeBox"
+        placeholder="Where are you from?"
+        value="Doe"
+        callback={(record) => console.log(record)}
+        />
       <h3><MyButton /></h3>
- 
     </div>
   );
 }
