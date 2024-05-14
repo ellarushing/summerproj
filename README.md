@@ -1,1 +1,1 @@
-# tester
+The purpose of this application is to provide users with a free, seamless, travel exploring webpage that allows users to use generative AI to find the best travel destinations based on the user's stated preferences.
