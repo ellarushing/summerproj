@@ -1,15 +1,13 @@
 import { React } from "react";
+import ReactSearchBox from "react-search-box";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <h1> Hello World! </h1>
-      <h2> Hi there </h2>
-      <h3> wassup </h3>
-      <h3> ayyyy! </h3>
-      <MyButton/>
-
+      <h1> Welcome! </h1>
+      <h3> <MyButton/> </h3>
+      <ReactSearchBox placeholder="Where would you like to go?" value="Doe"  callback = {(record) => console.log(record)} />
     </div>
   );
 }
@@ -17,7 +15,7 @@ const App = () => {
 function MyButton() {
   return (
     <button>
-      I'm a button
+      Search
     </button>
   );
 }
