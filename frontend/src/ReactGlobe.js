@@ -27,8 +27,6 @@ const ReactGlobe = () => {
     console.log("Points Data:", pointsData); // Debug points data
   }, []);
 
-  const MAPBOX_TOKEN = 'pk.eyJ1IjoiZWxsYXJ1c2hpbmciLCJhIjoiY2x3Nnk3dXg5MjA0eDJrcXVsaHM3dHlpeiJ9.ncqhXz4GSoEfFMgQlBw6Ow';
-
   return (
     <Globe
       ref={globeEl}
